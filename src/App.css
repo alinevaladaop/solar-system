@@ -1,3 +1,100 @@
 .App {
   text-align: center;
 }
+
+.header {
+  font-family: Franklin Gothic Medium , Arial Narrow , Arial , sans-serif;
+  font-size: 6em;
+  font-weight: 500;
+  padding: 5rem 0;
+  text-align: center;
+  text-shadow: white 0 0 70px;
+  width: 100%;
+}
+
+.titlePlanets {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 4px solid white;
+  border-radius: 0.5rem;
+  border-style: ridge;
+  font-family: Franklin Gothic Medium , Arial Narrow , Arial , sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 3rem 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+body {
+  background-image: url('./images/background.png');
+  color: white;
+  text-align: center;
+}
+
+.planets {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 120px;
+  padding-top: 120px;
+  width: 100vw;
+}
+
+@keyframes rotate {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.planetImg {
+  animation: rotate 100s linear infinite;
+  height: auto;
+  max-height: 500px;
+  max-width: 12vw;
+  width: auto;
+}
+
+.planetImg:hover {
+  filter: drop-shadow(white 0 0 70px);
+}
+
+.planetName {
+  font-family: Franklin Gothic Medium , Arial Narrow , Arial , sans-serif;
+  font-size: 120%;
+}
+
+.missions {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-wrap: wrap;
+}
+
+
+.missionCard {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  flex-grow: 1;
+  font-family: Franklin Gothic Medium , Arial Narrow , Arial , sans-serif;
+  font-size: 100%;
+  margin: 1rem;
+  width: 300px;
+}
+
+
+.missionName {
+  border-bottom: solid white 2px;
+  font-family: Franklin Gothic Medium , Arial Narrow , Arial , sans-serif;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: 900;
+  padding-bottom: 15px;
+}
+
